@@ -350,3 +350,62 @@ footer a {
     flex-direction: column;
     justify-content: space-between;
 }
+@media(max-width:412px) {
+    #nosso-restaurante {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #nossa-historia {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #critica {
+        height: 110px;
+    }
+
+    #critica-texto {
+        font-size: 1.8vw;
+
+    }
+
+    #titulo-cardapio {
+        margin-left: 32%;
+    }
+
+    #dica-cardapio {
+        margin-left: 16%;
+        font-size: 2vw
+    }
+
+    #direita {
+        text-align: left
+    }
+
+    footer {
+        flex-direction: column
+    }
+    
+    header {
+            position:absolute;
+            flex-direction:column;
+            top:0;
+            width: auto;
+            height:auto;
+            animation-duration: 1s;
+            margin-left:-300vw;
+           
+          
+        }    
+
+
+
+ @keyframes shoSideBar {
+            from{   margin-left:-145vw}
+            top{
+                margin-left:10vw;
+            }
+        }
+}
