@@ -230,7 +230,7 @@ header a:hover {
     padding: 2vw;
     border-radius: 1rem;
     background: rgba(255, 255, 255, 0.95);
-    background-image: url('/Imagens/transparent-food.png');
+    background-image: url('../Imagens/transparent-food.png');
     background-size: cover;
     background-position: center;
     color: var(--verde-escuro);
