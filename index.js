@@ -21,3 +21,29 @@ btn.addEventListener('click', () => {
 document.querySelectorAll("btn-login").addEventListener('click', function (e) {
     alert("Função não disponível na versão mobile atualmente.");
 })
+function togglesidebar() {
+    const sidebar = document.getElementById("sidebar");
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+    } else {
+        sidebar.style.width = "250px";
+    }
+    window.addEventListener('resize', function () {
+    if (window.innerWidth > 1024) {
+        sidebar.style.width = '0'; // Esconde a sidebar
+        showSideBar = false;
+    }
+});
+
+// Fecha a sidebar ao clicar em links (modo mobile)
+if (window.innerWidth < 1024) {
+    const links = sidebar.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', function () {
+            sidebar.style.width = '0';
+            showSideBar = false;
+        });
+    });
+}
+}
+

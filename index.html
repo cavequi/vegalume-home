@@ -10,32 +10,21 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-                <button onclick="togglesidebar()" class="botao_barrinha" id="botao_barrinha">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
-</svg>
-        </button>
-
-        <br>
-
-        <img src="./src/imagens/logo + nome embaixo.png" alt="">
-
-
-        <nav id="navegacao">
-            </button>
-            <button onclick="togglesidebar()" class="botao_barrinha2" id="botao_barrinha2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
-                </svg>
-            </button>   
-
+     <button id="open-sidebar-btn" onclick="togglesidebar()">☰</button>
+    <aside id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="togglesidebar()">×</button>
+    <a href="#nosso-restaurante">Nosso Restaurante</a>
+    <a href="#nosso-cardapio">Cardápio</a>
+    <a href="#nossa-historia">Nossa História</a>
+    <a onclick="alert('Função não disponível na versão mobile atualmente.')" class="btn-login">Entrar</a>
+</aside>
+     <header>
+       
         <a href="#nosso-restaurante">Nosso Restaurante</a>
         <a href="#nosso-cardapio">Cardápio</a>
         <a href="#nossa-historia">Nossa História</a>
         <a class="white-green-btn" class="btn-login" onclick="alert('Função não disponível na versão mobile atualmente.')">Entre e peça já!</a>
-        </nav>
+        
     </header>
 
     <section id="logo-section">
